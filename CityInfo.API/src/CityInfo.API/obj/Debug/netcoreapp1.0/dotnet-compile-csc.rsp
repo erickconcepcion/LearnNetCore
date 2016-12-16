@@ -172,4 +172,5 @@
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Controllers\CitiesController.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Controllers\PointOfInterest.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Models\CityDTO.cs"
+"C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Models\PointOfInterestCreate.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Models\PointOfInterestDTO.cs"
