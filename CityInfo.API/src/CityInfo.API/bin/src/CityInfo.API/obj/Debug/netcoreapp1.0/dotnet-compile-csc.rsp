@@ -203,6 +203,7 @@
 -r:"C:\Users\econs\.nuget\packages\System.Xml.XmlSerializer\4.3.0\ref\netstandard1.3\System.Xml.XmlSerializer.dll"
 -resource:"C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\bin\src\CityInfo.API\obj\Debug\netcoreapp1.0\CityInfo.APIdotnet-compile.deps.json",CityInfo.API.deps.json
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\CitiesDataStore.cs"
+"C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\CityInfoDbContextExtensions.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Program.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Startup.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Controllers\CitiesController.cs"
@@ -211,6 +212,9 @@
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Entities\City.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Entities\CityInfoDbContext.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Entities\PointOfInterest.cs"
+"C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Migrations\20161225221739_CityInfoDbInitial.cs"
+"C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Migrations\20161225221739_CityInfoDbInitial.Designer.cs"
+"C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Migrations\CityInfoDbContextModelSnapshot.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Models\CityDTO.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Models\PointOfInterestCreate.cs"
 "C:\Dev\Repos\Learning .Net Core\CityInfo.API\src\CityInfo.API\Models\PointOfInterestDTO.cs"
