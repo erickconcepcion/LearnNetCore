@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.0/",
-    "signature": "8ccf52f5c6ca9b8925b9adf287b64950fce210e3"
+    "signature": "cd9f0dfe5f2a201339cef918cabd3805d6f3a70e"
   },
   "compilationOptions": {
     "defines": [
@@ -27,10 +27,24 @@
           "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
           "Microsoft.Extensions.Configuration.Json": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final"
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "AutoMapper": "5.1.1"
         },
         "compile": {
           "CityInfo.API.dll": {}
+        }
+      },
+      "AutoMapper/5.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Queryable": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -1579,6 +1593,9 @@
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Collections.Specialized.dll": {}
         }
       },
       "System.ComponentModel/4.3.0": {
@@ -3058,10 +3075,24 @@
           "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
           "Microsoft.Extensions.Configuration.Json": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.0",
-          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final"
+          "Microsoft.EntityFrameworkCore.Tools": "1.0.0-preview2-final",
+          "AutoMapper": "5.1.1"
         },
         "runtime": {
           "CityInfo.API.dll": {}
+        }
+      },
+      "AutoMapper/5.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "NETStandard.Library": "1.6.1",
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Dynamic.Runtime": "4.3.0",
+          "System.Linq.Queryable": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AutoMapper.dll": {}
         }
       },
       "Libuv/1.9.0": {
@@ -5982,6 +6013,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AutoMapper/5.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q3uFSWccBUE1Q9BW88C6RO2Y/iFkPztTKK1ciyx1jhWPdOi5+pvzZ2EwcJKPiV0cr2EXZUWqQOsSpA5jVjfQBg=="
     },
     "Libuv/1.9.0": {
       "type": "package",

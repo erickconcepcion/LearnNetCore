@@ -12,6 +12,7 @@ using NLog.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using CityInfo.API.Entities;
 using Microsoft.EntityFrameworkCore;
+using CityInfo.API.Services;
 
 namespace CityInfo.API
 {
@@ -35,6 +36,7 @@ namespace CityInfo.API
                 .AddMvcOptions(o=>o.OutputFormatters.Add(new XmlDataContractSerializerOutputFormatter()));
             var connectionstring = Configuration["Connections:ConnectionString"];
             services.AddDbContext<CityInfoDbContext>(o=>o.UseSqlServer(connectionstring));
+            services.AddScoped<ICityInfoRepository, CityInfoRepository>();
 
         }
 
@@ -54,8 +56,18 @@ namespace CityInfo.API
             context.EnsureSeedDataForContext();
 
             app.UseStatusCodePages();
+            AutoMapper.Mapper.Initialize(map => {
+                map.CreateMap<Entities.City, Models.CityWithoutpointsOfInterestDTO>();
+                map.CreateMap<Entities.City,Models.CityDTO>();
+                map.CreateMap<Entities.PointOfInterest, Models.PointOfInterestDTO>();
+                map.CreateMap<Models.PointOfInterestCreate, Entities.PointOfInterest>();
+                map.CreateMap<Models.PointOfInterestUpdate, Entities.PointOfInterest>();
+                map.CreateMap<Entities.PointOfInterest, Models.PointOfInterestUpdate>();
+            });
+
             app.UseMvc();
 
+            
             
             //app.Run(async (context) =>
             //{
