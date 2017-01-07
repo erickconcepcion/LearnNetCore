@@ -37,6 +37,7 @@ namespace CityInfo.API
             var connectionstring = Configuration["Connections:ConnectionString"];
             services.AddDbContext<CityInfoDbContext>(o=>o.UseSqlServer(connectionstring));
             services.AddScoped<ICityInfoRepository, CityInfoRepository>();
+            services.AddCors();
 
         }
 
@@ -54,7 +55,6 @@ namespace CityInfo.API
             }
 
             context.EnsureSeedDataForContext();
-
             app.UseStatusCodePages();
             AutoMapper.Mapper.Initialize(map => {
                 map.CreateMap<Entities.City, Models.CityWithoutpointsOfInterestDTO>();
@@ -64,7 +64,9 @@ namespace CityInfo.API
                 map.CreateMap<Models.PointOfInterestUpdate, Entities.PointOfInterest>();
                 map.CreateMap<Entities.PointOfInterest, Models.PointOfInterestUpdate>();
             });
-
+            app.UseCors(builder => builder.WithOrigins("http://erickpc:4200"));/*(Configuration.GetSection("Origins:Multiorigins").
+                GetChildren().Select(s=>s.Value).Where(s=>s!=string.Empty).ToArray())
+                .AllowAnyMethod());*/
             app.UseMvc();
 
             

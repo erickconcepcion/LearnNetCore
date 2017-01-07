@@ -5,11 +5,11 @@
   },
   "compilationOptions": {
     "defines": [
-      "RELEASE",
+      "DEBUG",
       "TRACE",
       "NETCOREAPP1_0"
     ],
-    "optimize": true,
+    "optimize": false,
     "emitEntryPoint": true
   },
   "targets": {
