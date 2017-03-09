@@ -64,7 +64,8 @@ namespace CityInfo.API
                 map.CreateMap<Models.PointOfInterestUpdate, Entities.PointOfInterest>();
                 map.CreateMap<Entities.PointOfInterest, Models.PointOfInterestUpdate>();
             });
-            app.UseCors(builder => builder.WithOrigins("http://erickpc:4200"));/*(Configuration.GetSection("Origins:Multiorigins").
+            app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod());
+            /*app.UseCors(builder => builder.WithOrigins("http://erickpc:4200"));/*(Configuration.GetSection("Origins:Multiorigins").
                 GetChildren().Select(s=>s.Value).Where(s=>s!=string.Empty).ToArray())
                 .AllowAnyMethod());*/
             app.UseMvc();
